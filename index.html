@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Gustavo Maia</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/mediaqueries.css" />
+    <script
+      src="https://kit.fontawesome.com/483cd16238.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header id="top">
+      <menu class="navBar" onclick="clickMenu()">
+        <i class="fa-solid fa-bars" id="burguer"></i>
+      </menu>
+      <menu id="itens">
+        <a href="#top" id="hiddenPhone">Topo</a>
+        <a href="#aboutMe">Sobre Mim</a>
+        <a href="#courses">Cursos</a>
+        <a href="#socialMedia">Redes Sociais</a>
+      </menu>
+      <section class="firstContent">
+        <div class="withBG index">
+          <h1>Texto aqui</h1>
+          <a href="#top" id="goTop"
+            ><i class="fa-solid fa-arrow-up-long"></i
+          ></a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="withoutBG aboutMe" id="aboutMe">
+        <div class="description">
+          <h2>SOBRE MIM</h2>
+          <h3>Uma caracteristica</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus, a voluptatem? Praesentium excepturi iure distinctio?
+            Veniam exercitationem incidunt nam, odit fuga est! Porro modi
+            suscipit dignissimos dolores voluptas eaque at nisi illo, error
+            quidem enim eveniet ad, fuga ratione expedita!
+          </p>
+        </div>
+        <div class="description myPhoto">
+          <figure>
+            <figcaption><i></i> Gustavo Maia</figcaption>
+            <img src="/imagens/eu.png" alt="Foto de perfil Gustavo Maia" />
+          </figure>
+        </div>
+        <p id="tech">Tecnologias</p>
+        <div class="skillBars">
+          <p class="skillText">HTML:</p>
+          <div class="skillBarsContainer">
+            <div class="skills html">50%</div>
+          </div>
+          <p class="skillText">CSS:</p>
+          <div class="skillBarsContainer">
+            <div class="skills css">50%</div>
+          </div>
+          <p class="skillText">JavaScript:</p>
+          <div class="skillBarsContainer">
+            <div class="skills js">40%</div>
+          </div>
+        </div>
+      </section>
+      <section class="secondContent" id="courses">
+        <div class="withBG courses">
+          <h2>CURSOS</h2>
+        </div>
+      </section>
+      <section class="withoutBG coursesImg">
+        <div class="allImgs">
+          <div class="courseStyle">
+            <img src="imagens/bradesco.jpg" alt="Fundação Bradesco" />
+          </div>
+          <hr />
+          <div class="courseStyle">
+            <img src="imagens/cursoemvideo.jpg" alt="Curso em Vídeo" />
+            <ul>
+              <li>html</li>
+              <li>js</li>
+              <li>css</li>
+            </ul>
+          </div>
+          <hr />
+          <div class="courseStyle">
+            <img src="imagens/obc.jpg" alt="OneBit Code" />
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>BootStrap</li>
+              <li>React</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="thirdContent" id="socialMedia">
+        <div class="withBG media">
+          <h2>REDES SOCIAIS</h2>
+        </div>
+      </section>
+      <section class="withoutBG mediaLinks">
+        <a href="https://github.com/ms-gustavo" target="_blank"
+          ><i class="fa-brands fa-github">GitHub</i></a
+        >
+        <a href="https://www.instagram.com/gugarioms" target="_blank"
+          ><i class="fa-brands fa-instagram">Instagram</i></a
+        >
+        <a
+          href="https://www.linkedin.com/in/gustavo-maia-923509244/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin">LinkedIn</i></a
+        >
+      </section>
+    </main>
+
+    <footer>
+      <p>Site desenvolvido por Gustavo Maia. 2022.</p>
+    </footer>
+
+    <script>
+      function clickMenu() {
+        if (itens.style.display == "block") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "block";
+        }
+      }
+
+      function changeSize() {
+        if (window.innerWidth >= 768) {
+          itens.style.display = "block";
+        } else {
+          itens.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: darkgray;
+  height: 100vh;
+}
+
+.navBar {
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+.navBar:hover {
+  background-color: white;
+  color: black;
+}
+.navBar > i {
+  padding: 10px;
+}
+menu#itens {
+  display: none;
+}
+
+menu#itens > #hiddenPhone {
+  display: none;
+}
+
+menu#itens a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-top: 2px solid gray;
+}
+menu#itens a:hover {
+  background-color: white;
+  color: black;
+}
+
+.firstContent {
+  padding-top: 5px;
+  background: black url("../imagens/bgG.jpg") right top no-repeat fixed;
+  background-size: cover;
+}
+
+.firstContent > .index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.452);
+}
+.firstContent > .index > #goTop {
+  overflow: hidden;
+  position: fixed;
+  top: 85%;
+  left: 10px;
+  height: 35px;
+  width: auto;
+  padding: 10px;
+  background-color: black !important;
+  z-index: 1;
+  text-decoration: none;
+  color: white;
+  border-radius: 50%;
+}
+.firstContent > .index > #goTop:hover {
+  transform: translate(4px, -4px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.336);
+  transition: transform 0.4s;
+}
+.firstContent > .index > h1 {
+  background-color: white;
+  text-align: center;
+  width: 50%;
+  font-size: 2.2em;
+}
+
+.aboutMe > .description {
+  text-align: center;
+}
+
+.aboutMe > .description > h2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.aboutMe > .description > h3 {
+  padding-bottom: 15px;
+  font-style: italic;
+}
+
+div.myPhoto > figure {
+  padding-top: 25px;
+}
+div.myPhoto > figure > figcaption {
+  padding-bottom: 15px;
+}
+div.myPhoto img {
+  height: 60vh;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+div.myPhoto img:hover {
+  opacity: 1;
+}
+
+#tech {
+  text-align: center;
+  padding-top: 40px;
+}
+
+div.skillBars {
+  padding: 40px;
+}
+div.skillBars > p.skillText {
+  text-align: start;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.skillBarsContainer {
+  width: 100%;
+  background-color: #ddd;
+}
+div.skillBars div.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {
+  width: 50%;
+  background-color: rgb(43, 43, 43);
+}
+.css {
+  width: 50%;
+  background-color: rgb(43, 43, 43);
+}
+.js {
+  width: 40%;
+  background-color: rgb(43, 43, 43);
+}
+
+.secondContent {
+  background: black url("../imagens/cursos.jpg") center center no-repeat fixed;
+  background-size: cover;
+}
+
+.secondContent > .courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.452);
+}
+
+.secondContent > .courses > h2 {
+  background-color: white;
+  width: 50vw;
+  text-align: center;
+}
+
+section.coursesImg {
+  text-align: center;
+  padding: 20px;
+}
+
+section.coursesImg > div.allImgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+div.allImgs img {
+  height: 250px;
+  width: 250px;
+  border-radius: 10% 0px;
+  padding: 5px;
+  margin: 10px;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.5s;
+}
+div.allImgs img:hover {
+  opacity: 1;
+  background-color: red;
+  border-radius: 50%;
+}
+
+div.allImgs > div.courseStyle {
+  margin: 5px;
+}
+hr {
+  margin-top: 5px;
+  width: 90%;
+  border: 1px solid rgb(61, 61, 61);
+}
+
+.thirdContent {
+  background: black url("../imagens/redesociais.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+.thirdContent > .media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.452);
+}
+
+div.media > h2 {
+  background-color: white;
+  width: 50vw;
+  text-align: center;
+}
+
+section.mediaLinks > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: black;
+  transition: 0.5s;
+}
+section.mediaLinks > a:hover {
+  background-color: black;
+  color: white;
+}
+
+footer > p {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 0.8em;
+  padding: 10px;
+}
