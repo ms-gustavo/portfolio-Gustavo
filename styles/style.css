@@ -14,7 +14,6 @@ html {
 html,
 body {
   background-color: transparent;
-  height: 100vh;
 }
 
 .navBar {
@@ -118,18 +117,24 @@ div.myPhoto img {
   height: 60vh;
   opacity: 0.6;
   transition: 0.3s;
+  border-radius: 50%;
 }
 div.myPhoto img:hover {
   opacity: 1;
+  border: 2px solid rgba(0, 0, 0, 0.432);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.616);
 }
 
 #tech {
   text-align: center;
-  padding-top: 40px;
+  font-weight: bolder;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin: 20px;
 }
 
 div.skillBars {
-  padding: 40px;
+  padding: 0px 40px 40px 40px;
 }
 div.skillBars > p.skillText {
   text-align: start;
@@ -149,15 +154,28 @@ div.skillBars div.skills {
 
 .html {
   width: 50%;
-  background-color: rgb(43, 43, 43);
+  background-color: rgb(0, 0, 0);
 }
 .css {
   width: 50%;
-  background-color: rgb(43, 43, 43);
+  background-color: rgb(0, 0, 0);
 }
 .js {
   width: 40%;
-  background-color: rgb(43, 43, 43);
+  background-color: rgb(0, 0, 0);
+}
+
+.git {
+  width: 40%;
+  background-color: black;
+}
+.react {
+  width: 40%;
+  background-color: black;
+}
+.nodejs {
+  width: 40%;
+  background-color: black;
 }
 
 .secondContent {
@@ -195,6 +213,18 @@ section.coursesImg > div.allImgs {
 ul {
   list-style-type: none;
 }
+
+div.courseStyle > ul > li {
+  display: inline-block;
+  font-size: 4em;
+  margin: 0px 10px;
+  color: black;
+  transition: 0.5s;
+}
+div.courseStyle > ul > li:hover {
+  transform: translate(0px, -20px);
+}
+
 div.allImgs img {
   height: 250px;
   width: 250px;
@@ -203,12 +233,25 @@ div.allImgs img {
   margin: 10px;
   opacity: 0.6;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
 }
-div.allImgs img:hover {
+div.allImgs img#bradesco:hover {
   opacity: 1;
-  background-color: red;
+  background-color: #cc0a2f;
   border-radius: 50%;
+  box-shadow: 1px 1px 10px 5px #cc0a2f;
+}
+div.allImgs img#cEmVideo:hover {
+  opacity: 1;
+  background-color: #2827ff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px 5px #2827ff;
+}
+div.allImgs img#obc:hover {
+  opacity: 1;
+  background-color: #242626;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px 5px #242626;
 }
 
 div.allImgs > div.courseStyle {

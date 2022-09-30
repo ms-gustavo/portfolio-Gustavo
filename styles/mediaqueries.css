@@ -31,6 +31,7 @@
     z-index: 1;
   }
   menu#itens > a {
+    width: 20%;
     border: none;
     border-radius: 10px;
     transition: 0.5s;
@@ -40,7 +41,8 @@
   }
 
   .firstContent {
-    background: black url("../imagens/bgFirst.png") no-repeat fixed;
+    background: #111111 url("../imagens/bgFirst.png") center center no-repeat
+      fixed;
     background-size: cover;
   }
 
