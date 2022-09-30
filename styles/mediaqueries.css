@@ -39,6 +39,11 @@
     display: block;
   }
 
+  .firstContent {
+    background: black url("../imagens/bgFirst.png") no-repeat fixed;
+    background-size: cover;
+  }
+
   .firstContent > .index > #goTop {
     display: none;
   }
@@ -52,6 +57,11 @@
     margin: auto;
     width: 50vw;
   }
+  .aboutMe > .description > p {
+    width: auto;
+    margin: auto;
+    text-align: justify;
+  }
 
   hr {
     width: 50vw;
@@ -60,10 +70,22 @@
   .secondContent > .courses > h2 {
     width: 30vw;
     padding: 20px;
+    opacity: 0.7;
+    transition: 0.4s;
+    cursor: default;
+  }
+  .secondContent:hover .courses > h2 {
+    opacity: 1;
   }
 
   .thirdContent > .media > h2 {
     width: 30vw;
     padding: 20px;
+    opacity: 0.7;
+    transition: 0.4s;
+    cursor: default;
+  }
+  .thirdContent:hover > .media > h2 {
+    opacity: 1;
   }
 }

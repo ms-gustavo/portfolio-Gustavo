@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -13,7 +13,7 @@ html {
 
 html,
 body {
-  background-color: darkgray;
+  background-color: transparent;
   height: 100vh;
 }
 
@@ -55,7 +55,7 @@ menu#itens a:hover {
 
 .firstContent {
   padding-top: 5px;
-  background: black url("../imagens/bgG.jpg") right top no-repeat fixed;
+  background: black url("../imagens/bgPhone.jpg") center center no-repeat fixed;
   background-size: cover;
 }
 
@@ -86,12 +86,6 @@ menu#itens a:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.336);
   transition: transform 0.4s;
 }
-.firstContent > .index > h1 {
-  background-color: white;
-  text-align: center;
-  width: 50%;
-  font-size: 2.2em;
-}
 
 .aboutMe > .description {
   text-align: center;
@@ -106,12 +100,19 @@ menu#itens a:hover {
   padding-bottom: 15px;
   font-style: italic;
 }
+.aboutMe > .description > p {
+  width: 80vw;
+  margin: auto;
+  text-align: justify;
+}
 
 div.myPhoto > figure {
   padding-top: 25px;
 }
 div.myPhoto > figure > figcaption {
+  font-size: 1.3em;
   padding-bottom: 15px;
+  font-weight: bolder;
 }
 div.myPhoto img {
   height: 60vh;
@@ -173,9 +174,11 @@ div.skillBars div.skills {
 }
 
 .secondContent > .courses > h2 {
-  background-color: white;
-  width: 50vw;
+  background-color: rgb(255, 255, 255);
+  width: 30vw;
   text-align: center;
+  border-radius: 20px;
+  padding: 5px;
 }
 
 section.coursesImg {
@@ -198,9 +201,9 @@ div.allImgs img {
   border-radius: 10% 0px;
   padding: 5px;
   margin: 10px;
-  opacity: 0.7;
+  opacity: 0.6;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 div.allImgs img:hover {
   opacity: 1;
@@ -234,6 +237,8 @@ div.media > h2 {
   background-color: white;
   width: 50vw;
   text-align: center;
+  border-radius: 20px;
+  padding: 5px;
 }
 
 section.mediaLinks > a {
@@ -244,6 +249,7 @@ section.mediaLinks > a {
   text-decoration: none;
   font-size: 1.3em;
   color: black;
+
   transition: 0.5s;
 }
 section.mediaLinks > a:hover {
