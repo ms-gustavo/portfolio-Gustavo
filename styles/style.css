@@ -10,6 +10,10 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  width: 100%;
+  height: 100%;
+}
 
 html,
 body {
@@ -114,7 +118,8 @@ div.myPhoto > figure > figcaption {
   font-weight: bolder;
 }
 div.myPhoto img {
-  height: 60vh;
+  height: 50vh;
+  width: 85%;
   opacity: 0.6;
   transition: 0.3s;
   border-radius: 50%;
@@ -193,7 +198,7 @@ div.skillBars div.skills {
 
 .secondContent > .courses > h2 {
   background-color: rgb(255, 255, 255);
-  width: 30vw;
+  width: 40vw;
   text-align: center;
   border-radius: 20px;
   padding: 5px;
@@ -228,17 +233,16 @@ div.courseStyle > ul > li:hover {
 div.allImgs img {
   height: 250px;
   width: 250px;
-  border-radius: 10% 0px;
+  border-radius: 50%;
   padding: 5px;
   margin: 10px;
   opacity: 0.6;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 div.allImgs img#bradesco:hover {
   opacity: 1;
   background-color: #cc0a2f;
-  border-radius: 50%;
   box-shadow: 1px 1px 10px 5px #cc0a2f;
 }
 div.allImgs img#cEmVideo:hover {

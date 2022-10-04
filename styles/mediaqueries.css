@@ -64,6 +64,9 @@
     margin: auto;
     text-align: justify;
   }
+  div.myPhoto img {
+    width: auto;
+  }
 
   hr {
     width: 50vw;
