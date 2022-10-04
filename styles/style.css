@@ -21,7 +21,7 @@ body {
 }
 
 .navBar {
-  background-color: black;
+  background-color: #090909;
   color: white;
   text-align: center;
   display: block;
@@ -29,7 +29,7 @@ body {
 }
 .navBar:hover {
   background-color: white;
-  color: black;
+  color: #090909;
 }
 .navBar > i {
   padding: 10px;
@@ -48,12 +48,12 @@ menu#itens a {
   text-align: center;
   text-decoration: none;
   color: white;
-  background-color: black;
+  background-color: #090909;
   border-top: 2px solid gray;
 }
 menu#itens a:hover {
   background-color: white;
-  color: black;
+  color: #090909;
 }
 
 .firstContent {
@@ -78,7 +78,7 @@ menu#itens a:hover {
   height: 35px;
   width: auto;
   padding: 10px;
-  background-color: black !important;
+  background-color: #090909 !important;
   z-index: 1;
   text-decoration: none;
   color: white;
@@ -118,19 +118,21 @@ div.myPhoto > figure > figcaption {
   font-weight: bolder;
 }
 div.myPhoto img {
-  height: 85%;
-  width: 85%;
+  height: 75%;
+  width: 75%;
   opacity: 0.6;
-  transition: 0.3s;
+  transition: 1s;
   border-radius: 50%;
 }
 div.myPhoto img:hover {
   opacity: 1;
-  border: 2px solid rgba(0, 0, 0, 0.432);
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.616);
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.616);
 }
 
 #tech {
+  background-color: #090909;
+  color: white;
+  border-radius: 10px;
   text-align: center;
   font-weight: bolder;
   font-size: 1.2em;
@@ -215,19 +217,20 @@ section.coursesImg > div.allImgs {
   align-items: center;
 }
 
-ul {
-  list-style-type: none;
-}
-
-div.courseStyle > ul > li {
-  display: inline-block;
-  font-size: 4em;
-  margin: 0px 10px;
+div.coursesList {
+  display: block;
+  text-align: center;
+  width: 65%;
+  font-size: 2em;
   color: black;
-  transition: 0.5s;
 }
-div.courseStyle > ul > li:hover {
-  transform: translate(0px, -20px);
+div.courseItem > i {
+  margin-top: 10px;
+  transition: 0.5s;
+  cursor: default;
+}
+div.coursesList > div.courseItem > i:hover {
+  transform: translate(-5px, -5px);
 }
 
 div.allImgs img {
@@ -261,9 +264,10 @@ div.allImgs img#obc:hover {
 div.allImgs > div.courseStyle {
   margin: 5px;
 }
+
 hr {
   margin-top: 5px;
-  width: 90%;
+  width: 70%;
   border: 1px solid rgb(61, 61, 61);
 }
 
