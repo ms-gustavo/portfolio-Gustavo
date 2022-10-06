@@ -69,6 +69,10 @@
     width: auto;
   }
 
+  .secondContent {
+    background-attachment: fixed;
+  }
+
   .secondContent > .courses > h2 {
     width: 30vw;
     padding: 20px;
@@ -84,7 +88,7 @@
     width: 80%;
   }
 
-  div.allImgs img {
+  div.allImgs div.courseStyle > img {
     height: 320px;
     width: 320px;
   }
@@ -98,6 +102,10 @@
     color: black;
   }
 
+  .thirdContent {
+    background-attachment: fixed;
+  }
+
   .thirdContent > .media > h2 {
     width: 30vw;
     padding: 20px;
@@ -107,5 +115,39 @@
   }
   .thirdContent:hover > .media > h2 {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  img.certificate {
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+  img.certificate:hover {
+    border-radius: 10px;
+    opacity: 1;
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  img.certificate {
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+  img.certificate:hover {
+    border-radius: 10px;
+    opacity: 1;
+    height: 500px;
+    width: 500px;
   }
 }

@@ -58,7 +58,7 @@ menu#itens a:hover {
 
 .firstContent {
   padding-top: 5px;
-  background: black url("../imagens/bgPhone.jpg") center center no-repeat fixed;
+  background: black url("../imagens/bgPhone.jpg") center center no-repeat scroll;
   background-size: cover;
 }
 
@@ -186,7 +186,7 @@ div.skillBars div.skills {
 }
 
 .secondContent {
-  background: black url("../imagens/cursos.jpg") center center no-repeat fixed;
+  background: black url("../imagens/cursos.jpg") center center no-repeat scroll;
   background-size: cover;
 }
 
@@ -233,7 +233,7 @@ div.coursesList > div.courseItem > i:hover {
   transform: translate(-5px, -5px);
 }
 
-div.allImgs img {
+div.allImgs > div.courseStyle > img {
   height: 250px;
   width: 250px;
   border-radius: 50%;
@@ -271,8 +271,12 @@ hr {
   border: 1px solid rgb(61, 61, 61);
 }
 
+img.certificate {
+  display: none;
+}
+
 .thirdContent {
-  background: black url("../imagens/redesociais.jpg") no-repeat fixed;
+  background: black url("../imagens/redesociais.jpg") no-repeat scroll;
   background-size: cover;
 }
 
